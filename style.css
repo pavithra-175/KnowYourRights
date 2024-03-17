@@ -1,0 +1,230 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Global styling */
+nav a{
+    text-decoration: none; 
+}
+a.btn {
+    text-decoration: none;
+    margin-top: 50px;
+    color:black;
+    background-color: #1E90FF;
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+.landing {
+    text-align: center;  
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: white;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    height: 100px;
+}
+
+/* Main content styling */
+main {
+    margin: 2rem;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Form and input styling */
+form {
+    display: grid;
+    gap: 1rem;
+    max-width: 400px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+input.one{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #999;
+    border-radius: 50%;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+input,
+select {
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 0.5rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #1E90FF;
+}
+
+/* Section styling */
+section {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading and paragraph styling */
+h2, h3 {
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+}
+
+/* Style the search input */
+#searchBox {
+    width: 50%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Style the search button */
+button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Add some spacing to the scheme list */
+#schemeList {
+    margin-top: 20px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 480px) {
+    /* Styles for screens up to 480px width */
+    body {
+        background-color: #87CEEB; /* Sky Blue */
+        color: #000;
+    }
+
+    header {
+        background: #87CEEB; /* Sky Blue */
+    }
+
+    .landing,
+    .profile,
+    .filter {
+        padding: 20px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+    /* Styles for screens between 481px and 960px width */
+    body {
+        background-color: #87CEEB; /* Sky Blue */
+        color: #000;
+    }
+
+    header {
+        background: #fff; /* White */
+        color: #000;
+    }
+
+    .landing,
+    .profile,
+    .filter {
+        padding: 30px;
+    }
+}
+
+@media only screen and (min-width: 961px) {
+    /* Styles for screens above 960px width */
+    body {
+        background-color: #000; /* Black */
+        color: #fff;
+    }
+
+    header {
+        background: #87CEEB; /* Sky Blue */
+    }
+
+    .landing,
+    .profile,
+    .filter {
+        padding: 50px;
+    }
+
+    .filter {
+        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    #searchBox {
+        width: 30%;
+        margin-top: 0;
+    }
+}
