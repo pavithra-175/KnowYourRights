@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Create Profile - KnowYourRights</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li class="login"><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="profile">
+        <h1>Create Your Profile</h1>
+        <form id="profileForm">
+            <label for="profilePhoto">Profile Photo:</label>
+            <input type="file" id="profilePhoto" accept="image/*">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" required>
+
+            <label for="category">Category:</label>
+            <select id="category" required>
+                <option disabled selected value="">Select an option</option>
+                <option value="student">Student</option>
+                <option value="employee">Employee</option>
+                <option value="others">Others</option>
+                <!-- Add other options as needed -->
+            </select>
+
+            <label for="gender">Gender:</label>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male" class="one" required>
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female" class="one" required>
+            <label for="others">others</label>
+            <input type="radio" id="others" name="gender" value="others" class="one" required>
+
+            <label for="income">Income (per annum):</label>
+            <input type="number" id="income" required>
+
+            <button type="button" onclick="submitProfile()">Submit</button>
+            <!-- Profile details form goes here -->
+        </form>
+    </section>
+
+    <script src="profile.js"></script>
+</body>
+
+</html>
